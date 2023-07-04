@@ -6,16 +6,16 @@ import javax.persistence.*;
 
 @Entity
 @Data
-public class Zu {
+@Table(name = "users")
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int zuID;
-    private String zuLocation;
-    private String zuName;
+    private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "suzaID")
-    private Suza suza;
+    private String username;
 
+    private String password;
 
+    // Constructors, getters, and setters
 }
+
