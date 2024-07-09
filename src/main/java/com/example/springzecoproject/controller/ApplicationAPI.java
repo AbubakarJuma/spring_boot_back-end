@@ -13,7 +13,8 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/application")
-@CrossOrigin(origins = "http://localhost:3000/")
+// @CrossOrigin(origins = "http://localhost:3000/")
+ @CrossOrigin( origins = "https://collegeapplications.vercel.app/")
 public class ApplicationAPI {
     @Autowired
     public ApplicationRepo applicationRepo;
